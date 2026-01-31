@@ -1,4 +1,4 @@
-# Nexus: A loca-first Knowledge Manager
+# Nexus: A local-first Knowledge Manager
 > **Status:** Active Development
 > **Current version:** v0.1.0-alpha
 
