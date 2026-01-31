@@ -35,6 +35,7 @@ public class Book {
     public void setCurrentPage(int currentPage){
         if (currentPage > totalPages){
             System.out.println("Error: Page read past the end of the book.");
+            this.currentPage = totalPages;
         } else if (currentPage < 0) {
             System.out.println("Error: Page cannot be negative.");
         }else {
