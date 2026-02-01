@@ -10,6 +10,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LibraryService {
+
+    private final com.nexus.db.BookDAO bookDAO = new com.nexus.db.BookDAO();
+
     public List<Book> findBooksInDirectory(String directoryPath) {
         List<Book> booksFound = new ArrayList<>();
 
@@ -21,10 +24,8 @@ public class LibraryService {
                 String fullPath = entry.toAbsolutePath().toString();
 
                 Book newBook = new Book(filename, "Unknown", fullPath, 0);
+                bookDAO.save(newBook);
                 booksFound.add(newBook);
-
-                //for debuging
-                System.out.println("Found: " + filename);
 
             }
         } catch (IOException e) {
