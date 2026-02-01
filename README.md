@@ -47,9 +47,10 @@ Nexus is a CLI-based Personal Learning Environment (PLE) written in Java. It sca
   - [x] Build basic CLI for user interaction
   - [x] Unit Testing for Models and Services
 - [ ] **Phase 2: Persistence (Next Step)**
-    - [ ] Integrate **SQLite** database to replace temporary memory.
-    - [ ] Implement `BookDAO` (Data Access Object) for SQL operations.
-    - [ ] Save scan results to the database (`nexus.db`)
+    - [x] Integrate **SQLite** database to replace temporary memory.
+    - [x] Implement `BookDAO` (Data Access Object) for SQL operations.
+    - [x] Save scan results to the database (`nexus.db`)
+    - [ ] Refactor Main CLI to use a Menu Loop (Interactive Mode).
 
 - [ ] **Phase 3: Logic & State**
     - [ ] Track reading sessions (Start/Stop times)
